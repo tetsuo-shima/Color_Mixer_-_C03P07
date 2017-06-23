@@ -10,19 +10,6 @@
 # “yellow,” the program should display an error message. Otherwise, the program
 # should display the name of the secondary color that results.
 
-'''
-def get_new_color(user_colors):
-    if user_colors[0] == user_colors[1]:
-        return user_colors[0]
-
-    if 'red' in user_colors:
-        if 'blue' in user_colors:
-            return 'purple'
-        if 'yellow' in user_colors:
-            return 'orange'
-    if 'blue' in user_colors: #test for blue + yellow
-        return 'green'
-'''
 
 #investigate frozenset
 
@@ -58,4 +45,5 @@ def main():
     print("New color:", get_new_color(user_colors).title())
 
 
-main()
+if __name__ == '__main__':
+    main()
